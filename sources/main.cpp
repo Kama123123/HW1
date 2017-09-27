@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	try {
 		cout << endl << "***INT STACK***" << endl;
-		Stack<int> intStack; //Создание объекта класса Stack размера 7 без выделения новой памяти
+		Stack<int> intStack(10); //Создание объекта класса Stack размера 10 без выделения новой памяти
     //Добавление элементов
 		intStack.push(1);
 		intStack.push(2);
@@ -62,3 +62,4 @@ int main() {
 		cout << e.what() << endl;
 	}
 }
+
